@@ -1,0 +1,10 @@
+<h1>Welcome to Music Wall</h1>
+<% @songs.each do |song| %>
+  <div class="song"
+    <h3><%= song.id%>.  <%= song.title %></a> <small>(by: <%= song.artist %> // URL: <a href="<%=song.URL %>"> <%= song.URL %> </a> )</small></h3>
+  </div>
+<% end %>
+<br />
+<br />
+
+<a href="/songs/new">Post a new song and artist</a>
